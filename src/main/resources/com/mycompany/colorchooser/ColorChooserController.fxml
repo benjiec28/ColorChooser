@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Rectangle?>
 
-<GridPane hgap="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane hgap="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.colorchooser.PrimaryController">
   <columnConstraints>
       <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="137.20001220703125" minWidth="10.0" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="258.79998779296875" minWidth="10.0" />

@@ -58,36 +58,37 @@ public class PrimaryController {
     private double alpha = 1.0;
     
     public void initialize() {
-        redTextField.textProperty().bind(
-            redSlider.valueProperty().asString("%.0f"));
-        
         redSlider.valueProperty().addListener((ov, oldValue, newValue) -> {
             red = newValue.intValue();
             colorRectangle.setFill(Color.rgb(red, green, blue, alpha));
         });
         
-        greenTextField.textProperty().bind(
-            greenSlider.valueProperty().asString("%.0f"));
+        redTextField.textProperty().bind(
+            redSlider.valueProperty().asString("%.0f"));
         
         greenSlider.valueProperty().addListener((ov, oldValue, newValue) -> {
             green = newValue.intValue();
             colorRectangle.setFill(Color.rgb(red, green, blue, alpha));
         });
         
-        blueTextField.textProperty().bind(
-            blueSlider.valueProperty().asString("%.0f"));
+        greenTextField.textProperty().bind(
+            greenSlider.valueProperty().asString("%.0f"));
+        
         
         blueSlider.valueProperty().addListener((ov, oldValue, newValue) -> {
             blue = newValue.intValue();
             colorRectangle.setFill(Color.rgb(red, green, blue, alpha));
         });
         
-        alphaTextField.textProperty().bind(
-            alphaSlider.valueProperty().asString("%.0f"));
+        blueTextField.textProperty().bind(
+            blueSlider.valueProperty().asString("%.0f"));
         
         alphaSlider.valueProperty().addListener((ov, oldValue, newValue) -> {
             alpha = newValue.doubleValue();
             colorRectangle.setFill(Color.rgb(red, green, blue, alpha));
         });
+        
+        alphaTextField.textProperty().bind(
+            alphaSlider.valueProperty().asString("%.0f"));
     }
 }
