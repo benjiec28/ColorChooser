@@ -53,4 +53,18 @@ public class PrimaryController {
     private int green = 0;
     private int blue = 0;
     private double alpha = 1.0;
+    
+    public void initialize() {
+        redTextField.textProperty().bind(
+            redSlider.valueProperty().asString("%.0f"));
+        
+        greenTextField.textProperty().bind(
+            greenSlider.valueProperty().asString("%.0f"));
+        
+        blueTextField.textProperty().bind(
+            blueSlider.valueProperty().asString("%.0f"));
+        
+        alphaTextField.textProperty().bind(
+            alphaSlider.valueProperty().asString("%.0f"));
+    }
 }
