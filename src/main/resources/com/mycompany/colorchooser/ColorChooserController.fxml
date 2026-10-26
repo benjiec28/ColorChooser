@@ -39,7 +39,7 @@
       <Label fx:id="greenLabel" text="Green" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
       <Label fx:id="blueLabel" text="Blue" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
       <Label fx:id="alphaLabel" text="Alpha" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
-      <Circle fx:id="circle" fill="DODGERBLUE" radius="40.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowSpan="2147483647" />
-      <Rectangle fx:id="colorRectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" GridPane.rowSpan="2147483647" />
+      <Circle fx:id="circle" fill="#767676" radius="40.0" stroke="#ffffff00" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowSpan="2147483647" />
+      <Rectangle fx:id="colorRectangle" arcHeight="5.0" arcWidth="5.0" height="100.0" stroke="#40303000" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" GridPane.rowSpan="2147483647" />
    </children>
 </GridPane>
